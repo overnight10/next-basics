@@ -11,19 +11,5 @@ async function getData() {
 
 export default async function Page() {
   const data = await getData();
-  return <div>
-    <span>Neon version: {data}</span>
-    <br />
-    <br />
-    <h2>Next.js config</h2>
-    <ul>{Object.entries(nextConfig?.env ?? {}).map(([key, value]) => <li key={key}>{key}: {value}</li>)}</ul>
-    <br />
-    <br />
-    <h2>Process env</h2>
-    <ul>
-      {
-        Object.entries(process?.env ?? {}).map(([key, value]) => <li key={key}>{key}: {value}</li>)
-      }
-    </ul>
-  </div>;
+  return <div>{data}</div>;
 }
