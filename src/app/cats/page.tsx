@@ -40,9 +40,9 @@ export default function Cats() {
   const loadMore = () => {
     const prevCats = result.state === "success" ? result.cats : []
     fetchCats({ limit: 10 }).then((cats) => {
-      setResult((r) => ({ state: "success", cats: [...prevCats, ...cats] }));
+      setResult(() => ({ state: "success", cats: [...prevCats, ...cats] }));
     }).catch((error) => {
-      setResult((r) => ({ ...r, state: "error", message: error.message }));
+      setResult(() => ({ state: "error", message: error.message }));
     });
   }
 
