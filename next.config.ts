@@ -16,7 +16,10 @@ const nextConfig: NextConfig = {
         hostname: "30.media.tumblr.com",
       },
     ]
-  }
+  },
+  env: {
+    DATABASE_URL: process.env.DATABASE_URL,
+  },
 };
 
 export default nextConfig;

@@ -88,6 +88,7 @@ export default function Cats() {
                       width={cat.width}
                       height={cat.height}
                       className="max-w-full object-cover max-h-64 rounded-md"
+                      unoptimized={true}
                     />
                     <CardFooter className="text-base font-semibold w-fit h-fit">{cat.id}</CardFooter>
                   </CardContent>

@@ -7,7 +7,8 @@ import {
 
 const links: { title: string, href: string }[] = [
     { title: "Home", href: "/" },
-    { title: "Cats", href: "/cats" }
+    { title: "Cats", href: "/cats" },
+    { title: "Neon", href: "/neon" },
 ];
 
 export default function NavBar() {
